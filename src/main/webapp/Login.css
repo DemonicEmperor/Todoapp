@@ -1,0 +1,145 @@
+/* Login.css - Cool & Soft Theme */
+
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #f0f5ff 0%, #e6f0ff 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #4a5568;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 320px;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(143, 168, 191, 0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: none;
+}
+
+table th {
+    background-color: transparent;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    color: #4a5568;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border-color: #a0c4ff;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(160, 196, 255, 0.2);
+    outline: none;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    background-color: #a0c4ff;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #7aa1ff;
+    transform: translateY(-1px);
+}
+
+input[type="reset"] {
+    background-color: #e2e8f0;
+    color: #64748b;
+}
+
+input[type="reset"]:hover {
+    background-color: #cbd5e1;
+}
+
+p {
+    text-align: center;
+    margin: 1.5rem 0 0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+a {
+    color: #7aa1ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #5a8cff;
+    text-decoration: underline;
+}
+
+/* Error message styling */
+p[style*="background-color:yellow"] {
+    background-color: #fff8f0 !important;
+    color: #c05621 !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #ffedd5;
+    max-width: 320px;
+    margin: 1.5rem auto;
+    font-style: normal !important;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Soft floating effect for form */
+form {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    form {
+        width: 85%;
+        padding: 1.8rem;
+    }
+}

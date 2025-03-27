@@ -9,6 +9,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>View Tasks</title>
+<link href = "./ViewTask.css" rel="stylesheet">
 </head>
 <body>
 <p align="right" style="background-color:'light grey';">
@@ -30,7 +31,7 @@
 			</tr>
 			<tr>
 				<th>Task Date</th>
-				<td><input type="text" name="taskDate" placeholder="dd-mm-yyyy"></td>
+				<td><input type="date" name="taskDate" placeholder="dd-mm-yyyy"></td>
 			</tr>
 			<tr>
 				<th>Task Status</th>

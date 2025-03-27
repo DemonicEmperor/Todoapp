@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
+<link href = "./Login.css" rel="stylesheet">
 </head>
 <body>
 <form method="post" action="./LoginServlet">
